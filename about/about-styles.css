@@ -1,0 +1,94 @@
+/* Reset some default styles to ensure consistent rendering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and font to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+}
+
+/* Style the header/navigation bar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the About section */
+.about {
+    padding: 20px; /* Adjust padding for the About section */
+    background-color: #444; /* Background color for the About section */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to cover the viewport height */
+    text-align: center;
+    color: #fff; /* Text color for the About section */
+}
+
+.about h1 {
+    font-size: 1.1rem; /* Customize heading size */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem; /* Customize paragraph text size */
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
