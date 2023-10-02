@@ -8,7 +8,7 @@
 /* Apply a background color and font to the entire page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #444;
     color: #333;
     display: flex; /* Enable flexbox layout */
     flex-direction: column; /* Arrange children in a column */
@@ -30,6 +30,20 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Add padding to create a clickable area */
+    transition: background-color 0.3s; /* Add a smooth background color transition effect */
+    background-color: transparent; /* Set the initial background color to transparent */
+}
+
+/* Change the background color when hovering over a link */
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #ff6600; /* Change the background color on hover (e.g., orange) */
 }
 
 nav a {

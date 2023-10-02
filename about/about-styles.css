@@ -32,6 +32,20 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Add padding to create a clickable area */
+    transition: background-color 0.3s; /* Add a smooth background color transition effect */
+    background-color: transparent; /* Set the initial background color to transparent */
+}
+
+/* Change the background color when hovering over a link */
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #ff6600; /* Change the background color on hover (e.g., orange) */
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
